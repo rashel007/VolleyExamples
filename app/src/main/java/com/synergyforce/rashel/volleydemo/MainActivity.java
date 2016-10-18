@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
+    //volley default Request Queue
     private void defaultRequestQueue() {
         final RequestQueue requestQueue = Volley.newRequestQueue(MainActivity.this);
 
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         });
         requestQueue.add(stringRequest);
     }
-
+    // creatig custom Request Queue
     private void customRequestQueue() {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL,
                 new Response.Listener<String>() {
